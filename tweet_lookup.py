@@ -2,9 +2,9 @@
 import json
 import requests
 import user_lookup
-from secret import authorize
+import streamlit as st
 
-bearer_token = authorize['bearer_token']
+bearer_token = st.secrets['bearer_token']
 
 
 # Method required by bearer token authentication

@@ -1,8 +1,8 @@
 # used by tweet_lookup.py for extracting user id
 import requests
-from secret import authorize
+import streamlit as st
 
-bearer_token = authorize['bearer_token']
+bearer_token = st.secrets['bearer_token']
 
 
 # Method required by bearer token authentication

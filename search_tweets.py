@@ -1,9 +1,9 @@
 # fetch tweets by keyword posted in last 7 days
 import json
 import requests
-from secret import authorize
+import streamlit as st
 
-bearer_token = authorize['bearer_token']
+bearer_token = st.secrets['bearer_token']
 
 
 # Method required by bearer token authentication
